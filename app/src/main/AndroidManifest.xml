@@ -11,8 +11,6 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".UI2Activity"></activity>
-
-
         <activity android:name=".UIActivity"/>
         <activity android:name=".AliActivity" />
         <activity android:name=".DemoActivity" />
