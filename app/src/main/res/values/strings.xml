@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">精神小伙</string>
+    <string name="HelloWorld" translatable="false">你好</string>
+    <string name="ZH">请输入账号</string>
+    <string name="MM">请输入密码</string>
+    <string name="LOGO">登录</string>
+    <string name="TP">login</string>
+    <string name="YON">手机号/邮箱</string>
+    <string name="MMA">登录密码</string>
+    <string name="denlu">登录</string>
+    <string name="taobao_login">淘宝账户登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="todo">TODO</string>
+    <string name="nm">昵称</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="qren">确认密码</string>
+    <string name="jieshou">接收消息推送</string>
+    <string name="ton">同意本软件的用户服务协议和隐私政策</string>
+    <string name="Ail" />
+    <string name="shuzi">1</string>
+    <string name="shuzi01">2</string>
+    <string name="shuzi03">3</string>
+    <string name="sz04">4</string>
+    <string name="sz05">5</string>
+    <string name="sz06">6</string>
+    <string name="sz07">7</string>
+    <string name="sz08">8</string>
+    <string name="sz09">9</string>
+    <string name="fh01">%</string>
+    <string name="fh02">√</string>
+    <string name="fh03">C</string>
+    <string name="fh04">DEL</string>
+    <string name="fh05">-</string>
+
+    <string name="fh06">+</string>
+    <string name="fh07">÷</string>
+    <string name="sz00">0</string>
+    <string name="fh10">.</string>
+    <string name="fh11">=</string>
+    <string name="fh12">×</string>
+
+    <string name="kyubi_no_Youko_Fox">九尾妖狐</string>
+    <string name="ali">阿狸</string>
+    <string name="mage">法师</string>
+    <string name="assassin">刺客</string>
+    <string name="physical_attack">物理攻击</string>
+    <string name="magic_attack">魔法攻击</string>
+    <string name="defense_capability">防御能力</string>
+    <string name="difficulty_in_getting_started">上手难度</string>
+    <string name="ali_tp" />
+    <string name="aaa">K/DA 阿狸</string>
+    <string name="Button_left">左边</string>
+    <string name="Button_Right">右边</string>
+    <string name="Button_OK">确定</string>
+    <string name="Button_switch">开关</string>
+    <string name="open">开</string>
+    <string name="close">关</string>
+    <string name="Button_android">Android</string>
+    <string name="radio_apple">Apple</string>
+    <string name="edit_number">输入数值</string>
+    <string name="java">Java</string>
+    <string name="sql">SQL</string>
+    <string name="appraise">星评价</string>
+    <string name="ok_hint">请先填写数值，再点击确定</string>
+</resources>
