@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                if (phone.equals("10086")&&pwd.equals("123456"))
                {
                    Intent intent=new Intent(MainActivity.this,HomeActivity.class);
+                   intent.putExtra("data_phone","10086");
                    startActivity(intent);
                }
                else {
