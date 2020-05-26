@@ -58,7 +58,7 @@
                 app:srcCompat="@drawable/ic_register" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/edit_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -69,6 +69,7 @@
                 android:hint="@string/nm"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:maxLength="20"
                 android:textColor="@android:color/darker_gray" />
 
             <LinearLayout
@@ -87,18 +88,19 @@
                     app:srcCompat="@drawable/sex" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group_sex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/radio_man"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/boy" />
 
                     <RadioButton
-                        android:id="@+id/radioButton"
+                        android:id="@+id/radio_women"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/girl" />
@@ -106,7 +108,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/edit_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -116,10 +118,11 @@
                 android:ems="10"
                 android:hint="@string/MMA"
                 android:importantForAutofill="no"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:maxLength="6" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/edit_pwd_ok"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -129,10 +132,11 @@
                 android:ems="10"
                 android:hint="@string/qren"
                 android:importantForAutofill="no"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:maxLength="6" />
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -142,10 +146,11 @@
                 android:ems="10"
                 android:hint="@string/YON"
                 android:importantForAutofill="no"
-                android:inputType="numberPassword" />
+                android:inputType="phone"
+                android:maxLength="11" />
 
             <Switch
-                android:id="@+id/switch1"
+                android:id="@+id/switch_sms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -155,7 +160,7 @@
                 android:text="@string/jieshou" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/check_protocol"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -165,7 +170,7 @@
                 android:text="@string/ton" />
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/button_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
