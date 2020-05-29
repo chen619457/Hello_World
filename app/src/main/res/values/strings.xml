@@ -66,4 +66,9 @@
     <string name="ok_hint">请先填写数值，再点击确定</string>
     <string name="edlit_phone">手机号码</string>
     <string name="regjter">注册</string>
+    <string name="name">昵称</string>
+    <string name="xb">性别</string>
+    <string name="sex">性别</string>
+    <string name="welcome">你好，欢迎使用</string>
+    <string name="sms">推送</string>
 </resources>
