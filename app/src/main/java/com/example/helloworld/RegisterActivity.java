@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioGroup;
@@ -33,15 +34,15 @@ public class RegisterActivity extends AppCompatActivity {
                  //if (name.equals("")||pwd.equals("")||pwdok.equals("")||phone.equals("")||sex.equals(""))
                  if (name.equals(""))
                  {
-                     toast="填昵称";
+                     toast="请填写昵称";
                  }
                  else if (phone.equals(""))
                  {
-                     toast="填手机号码";
+                     toast="请填手机号码";
                  }
                  else if (sex.equals(""))
                  {
-                     toast="选择性别";
+                     toast="请选择性别";
                  }
                  else if (pwd.trim().length()!=6)
                  {
@@ -60,7 +61,27 @@ public class RegisterActivity extends AppCompatActivity {
                      toast="请同意协议";
                  }
                  else {
-                     toast = "注册成功";
+
+                     SharedPreferences sp = getSharedPreferences("user_info",MODE_PRIVATE);
+                     String temp = sp.getString("phone"+phone,"0");
+                     if (!temp.equals("0"))
+                     {
+                         toast="已被注册";
+                     }else {
+                         SharedPreferences.Editor editor=sp.edit();
+                         editor.putString("phone"+phone,phone);
+                         editor.putString("name"+phone,name);
+                         editor.putString("sex"+phone,sex);
+                         editor.putString("pwd"+phone,pwd);
+                         temp=(sms?"1":"0");//判断是否接收消息推送
+                         editor.putString("sms"+phone,temp);
+                         editor.apply();
+                         toast = "注册成功";
+                     }
+
+
+
+
                  }
                  Toast.makeText(RegisterActivity.this,toast,Toast.LENGTH_LONG).show();
 
