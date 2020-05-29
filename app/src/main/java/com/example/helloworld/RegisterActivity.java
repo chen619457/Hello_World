@@ -77,10 +77,8 @@ public class RegisterActivity extends AppCompatActivity {
                          editor.putString("sms"+phone,temp);
                          editor.apply();
                          toast = "注册成功";
+                         finish();
                      }
-
-
-
 
                  }
                  Toast.makeText(RegisterActivity.this,toast,Toast.LENGTH_LONG).show();
