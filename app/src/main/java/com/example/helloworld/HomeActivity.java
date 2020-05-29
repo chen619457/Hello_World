@@ -21,8 +21,9 @@ public class HomeActivity extends AppCompatActivity {
         String phone = intent.getStringExtra("data_phone");
         mBinding.userPhone.setText(phone);
 
+
         SharedPreferences sp = getSharedPreferences("user_info",MODE_PRIVATE);
-        String userName =sp.getString("naem"+phone,"0");
+        String userName =sp.getString("name"+phone,"0");
         String userSex =sp.getString("sex"+phone,"0");
         String userSms =sp.getString("sms"+phone,"0").equals("1")?"接受":"不接受";
         mBinding.userName.setText(userName);
