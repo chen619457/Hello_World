@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -24,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phone=mBinding.editPhone.getText().toString();
                 String pwd=mBinding.editPwd.getText().toString();
-               if (phone.equals("10086")&&pwd.equals("123456"))
+                SharedPreferences sp = getSharedPreferences("user_info",MODE_PRIVATE);
+                String temp_phone=sp.getString("phone"+phone,"error");
+                String temp_pwd=sp.getString("pwd"+phone,"error");
+               if (phone.equals(temp_phone)&&pwd.equals(temp_pwd))
                {
                    Intent intent=new Intent(MainActivity.this,HomeActivity.class);
                    intent.putExtra("data_phone",phone);
