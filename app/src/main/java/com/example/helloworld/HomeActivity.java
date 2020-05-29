@@ -21,6 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         String phone = intent.getStringExtra("data_phone");
         mBinding.userPhone.setText(phone);
 
+
         SharedPreferences sp = getSharedPreferences("user_info",MODE_PRIVATE);
         String userName =sp.getString("name"+phone,"0");
         String userSex =sp.getString("sex"+phone,"0");
