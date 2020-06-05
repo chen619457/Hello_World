@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.helloworld.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {
 
     private ActivityHomeBinding mBinding;
+    private long exitTime=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +33,22 @@ public class HomeActivity extends AppCompatActivity {
         String temp=mBinding.userSms.getText().toString()+":"+userSms;
         mBinding.userSms.setText(temp);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        exit();
+
+    }
+    private  void  exit()
+    {
+        long time=2000;
+        if (System.currentTimeMillis()-exitTime>2000)
+        {
+            exitTime=System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(),"快速点击两次,可退出当前账号",Toast.LENGTH_SHORT).show();
+        }else {
+            finish();
+        }
     }
 }
