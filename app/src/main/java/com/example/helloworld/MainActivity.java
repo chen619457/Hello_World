@@ -26,12 +26,19 @@ public class MainActivity extends AppCompatActivity {
                 String phone=mBinding.editPhone.getText().toString();
                 String pwd=mBinding.editPwd.getText().toString();
                 SharedPreferences sp = getSharedPreferences("user_info",MODE_PRIVATE);
-                String temp_phone=sp.getString("phone"+phone,"error");
-                String temp_pwd=sp.getString("pwd"+phone,"error");
-               if (phone.equals(temp_phone)&&pwd.equals(temp_pwd))
+                String tempPhone=sp.getString("phone"+phone,"error");
+                String tempPwd=sp.getString("pwd"+phone,"error");
+               if (phone.equals(tempPhone)&&pwd.equals(tempPwd))
                {
+                   Bundle bundle=new Bundle();
+                   String userName =sp.getString("name"+phone,"0");
+                   String userSex =sp.getString("sex"+phone,"0");
+                   String userSms ="1".equals(sp.getString("sms"+phone,"0")) ?"接受":"不接受";
+                   UserInfo u = new UserInfo(userName,pwd,userSex,phone,userSms);
+                   bundle.putSerializable("userInfo",u);
                    Intent intent=new Intent(MainActivity.this,HomeActivity.class);
-                   intent.putExtra("data_phone",phone);
+                   intent.putExtras(bundle);
+                   //intent.putExtra("data_phone",phone);
                    startActivity(intent);
                }
                else {
