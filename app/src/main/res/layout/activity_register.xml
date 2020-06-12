@@ -170,7 +170,7 @@
                 android:text="@string/ton" />
 
             <Button
-                android:id="@+id/button_reset"
+                android:id="@+id/button_update_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"

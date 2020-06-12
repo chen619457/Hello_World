@@ -88,13 +88,13 @@
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:maxLength="6"
-        app:layout_constraintBottom_toTopOf="@+id/button_reset"
+        app:layout_constraintBottom_toTopOf="@+id/button_update_pwd"
         app:layout_constraintEnd_toStartOf="@+id/guideline37"
         app:layout_constraintStart_toStartOf="@+id/guideline36"
         app:layout_constraintTop_toTopOf="@+id/guideline41" />
 
     <Button
-        android:id="@+id/button_reset"
+        android:id="@+id/button_update_pwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/button_update"
