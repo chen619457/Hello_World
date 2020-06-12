@@ -71,4 +71,10 @@
     <string name="sex">性别</string>
     <string name="welcome">你好，欢迎使用</string>
     <string name="sms">推送</string>
+    <string name="reset_pwd">输入用户信息</string>
+    <string name="button_update">更改密码</string>
+    <string name="logo">锁</string>
+    <string name="update">重置密码</string>
+    <string name="Newpassword">新密码</string>
+    <string name="phone_sj">手机号</string>
 </resources>

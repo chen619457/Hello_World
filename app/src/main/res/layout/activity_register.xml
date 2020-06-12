@@ -122,20 +122,6 @@
                 android:maxLength="6" />
 
             <EditText
-                android:id="@+id/edit_pwd_ok"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                android:drawableStart="@drawable/ok_password"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint="@string/qren"
-                android:importantForAutofill="no"
-                android:inputType="textPassword"
-                android:maxLength="6" />
-
-            <EditText
                 android:id="@+id/edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,6 +134,20 @@
                 android:importantForAutofill="no"
                 android:inputType="phone"
                 android:maxLength="11" />
+
+            <EditText
+                android:id="@+id/edit_pwd_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ok_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/qren"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLength="6" />
 
             <Switch
                 android:id="@+id/switch_sms"
