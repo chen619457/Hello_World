@@ -62,6 +62,7 @@ public class ResetPwdActivity2 extends AppCompatActivity {
                     }else {
                         Intent intent = new Intent(ResetPwdActivity2.this,UpdatePwdActivity.class);
                         startActivity(intent);
+                        intent.putExtra("phone",phone);
                         toast = "请填写新的密码";
                     }
 
