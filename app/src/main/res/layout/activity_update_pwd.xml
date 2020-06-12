@@ -46,10 +46,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.31" />
+        app:layout_constraintGuide_percent="0.56" />
 
     <ImageView
-        android:id="@+id/image_update"
+        android:id="@+id/update_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:contentDescription="@string/logo"
@@ -60,7 +60,7 @@
         app:srcCompat="@drawable/password" />
 
     <EditText
-        android:id="@+id/edit_pwd_update"
+        android:id="@+id/edit_pwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -76,8 +76,25 @@
         app:layout_constraintStart_toStartOf="@+id/guideline36"
         app:layout_constraintTop_toTopOf="@+id/guideline40" />
 
+    <EditText
+        android:id="@+id/edit_ok_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ok_password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/qren"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        app:layout_constraintBottom_toTopOf="@+id/button_reset"
+        app:layout_constraintEnd_toStartOf="@+id/guideline37"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
+        app:layout_constraintTop_toTopOf="@+id/guideline41" />
+
     <Button
-        android:id="@+id/button_update"
+        android:id="@+id/button_reset"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/button_update"
