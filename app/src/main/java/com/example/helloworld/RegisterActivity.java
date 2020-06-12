@@ -21,7 +21,7 @@ public class RegisterActivity extends AppCompatActivity {
         mBinding=ActivityRegisterBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
-        mBinding.buttonRegister.setOnClickListener(new View.OnClickListener() {
+        mBinding.buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                  name=mBinding.editName.getText().toString().trim();
